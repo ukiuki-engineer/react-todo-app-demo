@@ -16,6 +16,10 @@
   cursor: pointer;
 }
 
+.completed {
+  color: gray;
+}
+
 .inputTodo {
   height: 24px;
   margin-right: 8px;
@@ -29,4 +33,3 @@
 .deleteTodo:hover {
   cursor: pointer;
 }
-
