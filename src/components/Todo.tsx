@@ -39,7 +39,7 @@ const Todo = (props: Props) => {
   return <>
     <div className="todo">
       <input className="checkTodo" id={String(props.todo.id)} type="checkbox" checked={props.todo.completed} onChange={toggleTodo} readOnly />
-      <label htmlFor={String(props.todo.id)}>Todo{props.todo.id} : {props.todo.task}</label>
+      <label htmlFor={String(props.todo.id)}>{props.todo.id} : {props.todo.task}</label>
     </div>
   </>;
 };

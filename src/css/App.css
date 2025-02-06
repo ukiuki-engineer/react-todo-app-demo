@@ -12,8 +12,21 @@
 .checkTodo {
   margin-right: 8px;
 }
+.checkTodo:hover {
+  cursor: pointer;
+}
 
 .inputTodo {
   height: 24px;
   margin-right: 8px;
+  width: 220px;
 }
+
+.addTodo:hover {
+  cursor: pointer;
+}
+
+.deleteTodo:hover {
+  cursor: pointer;
+}
+

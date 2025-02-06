@@ -31,7 +31,7 @@ const DeleteTodo = (props: Props) => {
   }
 
   return <>
-    <button onClick={deleteTodo}>完了したTodoを削除</button>
+    <button className="deleteTodo" onClick={deleteTodo}>完了したTodoを削除</button>
   </>;
 };
 

@@ -41,7 +41,7 @@ const AddTodo = (props: Props) => {
     <>
       <div>
         <input className="inputTodo" type="text" placeholder="Todoを追加" ref={taskText} />
-        <button onClick={addTodo}>追加</button>
+        <button className="addTodo" onClick={addTodo}>追加</button>
       </div>
     </>
   );
