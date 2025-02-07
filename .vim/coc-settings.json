@@ -1,19 +1,18 @@
 {
-  "cSpell.ignoreWords": [],
-  "semanticTokens.enable": true,
-  "eslint.enable": true,
-  "eslint.autoFixOnSave": true,
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
+  /**
+   * NOTE: packageの依存関係が上手く解決できず、
+   *       eslintを導入することができなかったので
+   *       lsp側のフォーマッタに頼ることにする。
+   */
+  "coc.preferences.formatOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "typescriptreact",
+    "css"
   ],
-  "eslint.packageManager": "npm",
-  "eslint.options": {
-    // "extensions": [".js", ".jsx", ".ts", ".tsx"]
-  },
-  "tsserver.enable": false,
+    "cSpell.ignoreWords": [],
+  "semanticTokens.enable": false,
+  "tsserver.enable": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": true,
   "javascript.format.enable": false,
-  "prettier.enable": false
+  "prettier.enable": false,
 }
