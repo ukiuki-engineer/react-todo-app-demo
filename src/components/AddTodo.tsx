@@ -25,7 +25,6 @@ const AddTodo = (props: Props) => {
 
   const addTodo = () => {
     if (taskText.current === null) return;
-    if (taskText.current.value === "") return alert("Todoを入力してください!!");
     const todo = { id: 0, task: taskText.current.value, completed: false };
     if (props.todos.length === 0) {
       todo.id = 1;
