@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/App.css"
+import "../css/App.css";
 
 type Props = {
   todo: {
@@ -34,7 +34,7 @@ const Todo = (props: Props) => {
       return todo;
     });
     props.setTodos(newtodos);
-  }
+  };
 
   return <>
     <div className="todo">

@@ -20,9 +20,9 @@ const TodoList = (props: Props) => {
       {props.todos.map((todo) => {
         return <div key={todo.id}>
           <Todo todo={todo} todos={props.todos} setTodos={props.setTodos} />
-        </div>
+        </div>;
       })}
-    </>)
+    </>);
 };
 
 export default TodoList;

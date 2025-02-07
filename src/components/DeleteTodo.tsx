@@ -28,7 +28,7 @@ const DeleteTodo = (props: Props) => {
       idCount++;
     });
     props.setTodos(newtodos);
-  }
+  };
 
   return <>
     <button className="deleteTodo" onClick={deleteTodo}>完了したTodoを削除</button>

@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import "../css/App.css"
+import "../css/App.css";
 
 type Props = {
   todos: {
@@ -21,21 +21,21 @@ type Todos = {
 }[];
 
 const AddTodo = (props: Props) => {
-  const taskText = useRef<HTMLInputElement>(null)
+  const taskText = useRef<HTMLInputElement>(null);
 
   const addTodo = () => {
-    if (taskText.current === null) return
+    if (taskText.current === null) return;
     if (taskText.current.value === "") return alert("Todoを入力してください!!");
-    let todo = { id: 0, task: taskText.current.value, completed: false };
+    const todo = { id: 0, task: taskText.current.value, completed: false };
     if (props.todos.length === 0) {
       todo.id = 1;
     } else {
       todo.id = props.todos.length + 1;
     }
-    const newTodos: Todos = [...props.todos, todo]
-    props.setTodos(newTodos)
-    taskText.current.value = ""
-  }
+    const newTodos: Todos = [...props.todos, todo];
+    props.setTodos(newTodos);
+    taskText.current.value = "";
+  };
 
   return (
     <>
