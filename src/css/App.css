@@ -12,6 +12,7 @@
 .checkTodo {
   margin-right: 8px;
 }
+
 .checkTodo:hover {
   cursor: pointer;
 }
@@ -32,4 +33,79 @@
 
 .deleteTodo:hover {
   cursor: pointer;
+}
+
+.editIcon {
+  margin-left: 8px;
+}
+
+.editIcon:hover {
+  cursor: pointer;
+}
+
+/*
+ * 汎用スタイル
+ **/
+.mr2 {
+  margin-right: 2px;
+}
+
+.ml2 {
+  margin-left: 2px;
+}
+
+.mr4 {
+  margin-right: 4px;
+}
+
+.ml4 {
+  margin-left: 4px;
+}
+
+.mr6 {
+  margin-right: 6px;
+}
+
+.ml6 {
+  margin-left: 6px;
+}
+
+.mr8 {
+  margin-right: 8px;
+}
+
+.ml8 {
+  margin-left: 8px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.mr12 {
+  margin-right: 12px;
+}
+
+.ml12 {
+  margin-left: 12px;
+}
+
+.mr14 {
+  margin-right: 14px;
+}
+
+.ml14 {
+  margin-left: 14px;
+}
+
+.mr16 {
+  margin-right: 16px;
+}
+
+.ml16 {
+  margin-left: 16px;
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "../css/App.css";
+import { FaPencilAlt } from "react-icons/fa";
 
 type Props = {
   todo: {
@@ -47,7 +48,13 @@ const Todo = (props: Props) => {
         readOnly
       />
       <span className={props.todo.completed ? "completed" : ""}>
-        {props.todo.id} : {props.todo.task}
+        <span className="ml8">
+          {props.todo.id} :
+        </span>
+        <FaPencilAlt className="editIcon" />
+        <span className="ml8">
+          {props.todo.task}
+        </span>
       </span>
     </div>
   </>;
