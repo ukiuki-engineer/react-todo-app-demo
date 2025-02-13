@@ -18,6 +18,10 @@ function App() {
   return (
     <div className="App">
       <h1>- Todoアプリ -</h1>
+      {/* NOTE: コンポーンント間のデータの受け渡しについてメモ
+        親コンポーネントでuseStateしているデータと、そのsetState関数を子コンポーネントにprops経由で渡す。
+        子コンポーネントからpropsで渡されたsetStateを実行して、親コンポーネントのuseStateのデータを更新する。
+      */}
       <AddTodo todos={todos} setTodos={setTodos} />
       <TodoList todos=
         {todos} setTodos={setTodos} />
