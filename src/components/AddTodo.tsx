@@ -39,8 +39,17 @@ const AddTodo = (props: Props) => {
   return (
     <>
       <div>
-        <input className="inputTodo" type="text" placeholder="Todoを追加" ref={taskText} />
-        <button className="addTodo" onClick={addTodo}>追加</button>
+        <input
+          className="inputTodo"
+          type="text"
+          placeholder="Todoを追加"
+          onKeyDown={(e) => e.key === "Enter" && addTodo()} // Enterキーで確定
+          ref={taskText}
+        />
+        <button
+          className="addTodo"
+          onClick={addTodo}
+        >追加</button>
       </div>
     </>
   );
