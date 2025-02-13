@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import "./css/App.css";
 import AddTodo from "./components/AddTodo";
 import TodoList from "./components/TodoList";
@@ -12,17 +12,16 @@ type Todo = {
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
-  const unCompletedCount = () => {
+  const unCompletedCount = useMemo(() => {
     return todos.filter((todo) => !todo.completed).length;
-  };
-
+  }, [todos]);
   return (
     <div className="App">
       <h1>- Todoアプリ -</h1>
       <AddTodo todos={todos} setTodos={setTodos} />
       <TodoList todos=
         {todos} setTodos={setTodos} />
-      <p>残り{unCompletedCount()}/{todos.length}</p>
+      <p>残り{unCompletedCount}/{todos.length}</p>
       <DeleteTodo todos={todos} setTodos={setTodos} />
     </div>
   );
