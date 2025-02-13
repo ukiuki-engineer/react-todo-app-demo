@@ -12,6 +12,9 @@ type Todo = {
 
 function App() {
   const [todos, setTodos] = useState<Todo[]>([]);
+  const unCompletedCount = () => {
+    return todos.filter((todo) => !todo.completed).length;
+  };
 
   return (
     <div className="App">
@@ -19,7 +22,7 @@ function App() {
       <AddTodo todos={todos} setTodos={setTodos} />
       <TodoList todos=
         {todos} setTodos={setTodos} />
-      <p>残りTodo件数 : {todos.length}件</p>
+      <p>残り{unCompletedCount()}/{todos.length}</p>
       <DeleteTodo todos={todos} setTodos={setTodos} />
     </div>
   );
